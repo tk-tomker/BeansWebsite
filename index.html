@@ -15,18 +15,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+
 </head>
 <body>
 
     <header>
-        <a href="#" class="logo">
+        <a href="#hero" class="logo">
             <img src="beanlogo.png">
         </a>
 
         <ul class="navlist">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Membership</a></li>
-            <li><a href="#">Events</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#karen">Our Karen</a></li>
+            <li><a href="#">Menu</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
         <div class="right-content">
@@ -35,9 +39,9 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="hero">
         <div class="hero-text">
-            <h5 data-aos="fade-right", data-aos-duration="1400">We're not a brand, we're just Beans</h5>
+            <h5 data-aos="fade-right", data-aos-duration="1400">We're not a brand, we're just Beans!</h5>
             <h1 data-aos="zoom-in-left", data-aos-duration="1400" data-aos-delay="200">Beans - Oundle</h1>
             <p data-aos="fade-right", data-aos-duration="1400" data-aos-delay="300">Beans Coffee Stop...beautiful location, beautiful atmosphere, beautiful coffee, what other reasons do you need to love coffee and cake!</p>
 
@@ -55,8 +59,119 @@
         </div>
     </section>
 
+    <section class="about" id="about">
+        <div class="about-text">
+            <div class="glass">
+                <h1>Our History</h1>
+                <h2>Where it all started</h1>
+                <p>Beans Coffee Stop Limited was the brainchild of Phil & Karen Gilbert during late 2003, and meticulous planning lead to the opening of the first Beans in Oundle on the 16th of February 2004. This shop was an overnight success and was quickly joined by a second, in the centre of Stamford, which opened in late November 2004.<br><br>
+    
+    
+                    In July 2006, Beans opened its third shop in Higham Ferrers, Northamptonshire. Venturing into new territory, both in its layout and location, Beans of Higham complimented the other shops perfectly.<br><br>
+    
+    
+                    2007 saw us open our smallest shop in Oakham, and in June 2008 we moved further south to Olney, 10 miles north of Milton Keynes. Later in 2008 we opened in Uppingham.<br><br>
+    
+    
+                    However, as with all things in life, all good things come to an end, and we gradually sold off the various shops until in May 2016 we had finally come full circle and just had the original – and clearly the best – cafe in Oundle.</p>    
+            </div>
+            <div class="glass">
+                <h1>Our Ethos</h1>
+                <h2>What will you find when you arrive at
+                    Beans?</h2>
+                <p>Beans offers a high class environment with quality furnishings and tasteful décor, whilst being modern and bright within, we work hard to adhere to the period nature of the Grade 2 Listed surroundings and building itself. Without exception, our shop has also been designed to blend in very well within the beautiful ancient market town of Oundle. We aim to please the top end of the coffee shop market, as well as offering fresh home-made snacks and lunches. This means that our shop not only provides you with great coffee, food, and service, but also a chance to admire a fascinating historic area of the country.Beans offers a high class environment with quality furnishings and tasteful décor, whilst being modern and bright within, we work hard to adhere to the period nature of the Grade 2 Listed surroundings and building itself. Without exception, our shop has also been designed to blend in very well within the beautiful ancient market town of Oundle. We aim to please the top end of the coffee shop market, as well as offering fresh home-made snacks and lunches. This means that our shop not only provides you with great coffee, food, and service, but also a chance to admire a fascinating historic area of the country.<br><br>
+    Our reputation for serving the very best coffee in town is almost matched by the excitement surrounding those famous Ice Cream Milkshakes! Beans has come to be recognised as ‘the place to be’ for all ages. We provide you with the ability to work, socialise or just relax, whether you use our FREE WiFi to do so or stick to a good old fashioned chin wag.<br><br>
+    A couple of our trademarks are our use of wallchart World atlases – loved by our customers as a way of planning their next holiday, or simply to reminisce about previous ones – and our use of MICKI LONGLEY’s artwork which, I’m sure our customers agree, provide a view of the world from a slightly different angle! With Fairtrade at its heart and a family of staff and customers (and that includes you) Beans has something different to offer than other coffee shops…<br><br>
+                </p>
+            </div>
+            <div class="glass">
+                <h1>Our Ethics</h1>
+                <h2>Fairtrade</h2>
+                <p>Unlike most coffee shop chains ALL of Beans’ coffee is made from freshly ground Fairtrade coffee. We do not use any other kind. Beans works tirelessly to find new and exciting Fairtrade products to stock and replace our existing product range, however we do not compromise on quality.
+                    Fairtrade guarantees a fair and stable price for products that enable farmers all over the world to support their families, and crucially, invest in a better future. The Fairtrade mark is an independent label which appears on a wide range of retail and catering products as a guarantee that disadvantaged farmers and workers in the developing world are getting a better deal from the product. You can find out more about Fairtrade at the foundation’s website www.fairtrade.org.uk
+                </p>
+                <h2>Recylcing</h2>
+                <p>Recycling is something we feel very strongly about, we recycle as much plastics, glass and paper as possible and use ethically driven waste management companies. As well as recycling our own waste we also source as many recycled packaging products as we can, and with the introduction of our fully compostable takeaway products – cups, lids, straws and containers – we hope to keep our footprint small and do our bit to make this a sustainable world.
+    
+                </p>
+                <h2>Charity</h2>
+                <p>We are always happy to support local charities, and have an area near the loos dedicated to publicising local charitable or art events. We also love to provide raffle prizes or sponsorship for good causes.
+    
+                </p>
+            </div>
+            
+        </div>
+
+    </section>
+
+    <section class="karen" id="karenimg">
+        <div class="left-col glass">
+            <h1> OUR KAREN</h1>
+            <p>So, it’s Beans’ 18th year – yes it’s really been that long! Karen & Phil opened Oundle Beans in February 2004 and since then we’ve gone from strength to strength, and now enjoy (if you will pardon our slight bit of self congratulation) being part of the Oundle fabric!
+                However, 2018 was an extremely sad year for all of us here  – customers as well as staff.
+                Karen was the inspiration for the design and decor from the initial opening of our shop up to the present day, for both this and the other Beans cafes.
+                Unfortunately Karen had been battling with cancer since 2002, but she refused to bow to it and carried on as if it was just a common cold. However, after 16 years Karen finally met a match for her stoicism and bravery, with the inevitable outcome.
+                Karen was an inspiration in the truest sense of the word, and we sorely miss her cheerfulness, ideas, organisation and incredible work ethic.
+            </p>
+        </div>
+        <div class="right-col glass">
+            <h1>RIP<br> 
+                Karen Lesley Gilbert<br>
+                1958 – 2018</h1>
+                <img src="karen.png" id="karen">
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <input type="radio" name="slide" id="c1" checked>
+            <label for="c1" class="card">
+                <div class="row">
+                    <div class="icon">1</div>
+                    <div class="description">
+                        <h4>Winter</h4>
+                        <p>yapyapypypaypapyapypaypaypaypapy</p>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c2" checked>
+            <label for="c2" class="card">
+                <div class="row">
+                    <div class="icon">2</div>
+                    <div class="description">
+                        <h4>Winter</h4>
+                        <p>yapyapypypaypapyapypaypaypaypapy</p>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c3" checked>
+            <label for="c3" class="card">
+                <div class="row">
+                    <div class="icon">3</div>
+                    <div class="description">
+                        <h4>Winter</h4>
+                        <p>yapyapypypaypapyapypaypaypaypapy</p>
+                    </div>
+                </div>
+            </label>
+            <input type="radio" name="slide" id="c4" checked>
+            <label for="c1" class="card">
+                <div class="row">
+                    <div class="icon">4</div>
+                    <div class="description">
+                        <h4>Winter</h4>
+                        <p>yapyapypypaypapyapypaypaypaypapy</p>
+                    </div>
+                </div>
+            </label>
+        </div>
+        
+
+        
+    </section>
+
     <div class="icons">
-        <a href="#" data-aos="fade-in", data-aos-duration="1400" data-aos-delay="600"><i class="ri-facebook-fill"></i></a>
+        <a href="https://www.beanscoffeestop.co.uk/www.facebook.com/beanscoffeestop" target="_blank" data-aos="fade-in", data-aos-duration="1400" data-aos-delay="600"><i class="ri-facebook-fill"></i></a>
         <a href="#" data-aos="fade-in", data-aos-duration="1400" data-aos-delay="700"><i class="ri-youtube-fill"></i></a>
         <a href="#"data-aos="fade-right", data-aos-duration="1400" data-aos-delay="800"><i class="ri-twitter-fill"></i></a>
     </div>
@@ -73,6 +188,24 @@
       });
 
     </script>
+    <script>
+        $(document).ready(function(){
+            $(".navlist a, .logo, .karen").on('click', function(event){
+                if (this.hash !== ""){
+                    event.preventDefault();
 
+                    var hash=this.hash;
+
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function(){
+
+                        window.location.hash = hash;
+
+                    })
+                }
+            })
+        })
+    </script>
 </body>
 </html>
