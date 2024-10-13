@@ -277,6 +277,7 @@ section{
 
 
 .about{
+    position: relative;
     padding-top: 20px;
     font-size: 15px;
 }
@@ -316,15 +317,19 @@ section{
 
 }
 .glass:hover{
-    transform: scale(1.05);
+    transform: scale(1.02);
     border: var(--main-color) 3px solid
     
 }
 
+.about .glass:hover{
+    transform: scale(1.05);
+}
 
 
 .karen{
-    height: 700px;
+    position: relative;
+    height: auto;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -332,7 +337,12 @@ section{
     text-align: center;
     padding-top: 20px;
     font-size: 15px;
-    
+    gap: 1em;
+}
+
+#karen{
+
+
 }
 
 .left-col{
@@ -352,18 +362,19 @@ section{
     flex: 1;
     display: flex;
     width: 100%;
+    max-height: 100%;
+    
     flex-direction: column;
     overflow: hidden;
     background-color: transparent;
+    margin-bottom: 1em;
 }
 
 #rip{
     border: none;
 }
 
-.karen h1:hover{
-    background-color: transparent;
-}
+
 
 .karen p, h2{
     margin-left: 10px;
@@ -371,7 +382,6 @@ section{
 
 
 #karen{
-    
     border-radius: 7px;
 }
 
@@ -440,7 +450,18 @@ section{
     text-transform: uppercase;
 }
 
-
+.menu{
+    position: relative;
+    
+    
+    flex-direction: row;
+    width: 100%;
+    gap: 1em;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+    
+}
 
 .menu img{
     width: 100%;
@@ -458,8 +479,9 @@ section{
     display: inline-block;
 }
 
-.menu h1:hover{
-    background-color: transparent;
+.glass:hover{
+    
+    transform: scale(1.005) !important;
 }
 
 
