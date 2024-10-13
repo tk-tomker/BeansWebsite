@@ -18,11 +18,12 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     
+    
 
 </head>
 
-<body>
-    <header>
+<body class="lighmode">
+    <header id="header">
         <a href="#hero" class="logo">
             <img src="beanlogo.png">
         </a>
@@ -30,11 +31,15 @@
         <ul class="navlist">
             <li><a href="#about">About</a></li>
             <li><a href="#karen">Our Karen</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="right-content">
             <a href="#" class="nav-btn" id="signin">Sign In</a>
+            <button id="themeswitch">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#eae8ed"><path d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"/></svg>
+            </button>
             <div class="bx bx-menu" id="menu-icon"></div>
         </div>
     </header>
@@ -47,9 +52,9 @@
 
                 <div class="main-hero" data-aos="flip-down", data-aos-duration="1400" data-aos-delay="400">
                     <a href="#" class="btn">Visit Now</a>
-                    <a href="#" class="price">
+                    <!--<a href="#" class="price">
                         £3.00 -- <span>Regular Price</span>
-                    </a>
+                    </a>-->
                 </div>
             </div>
 
@@ -84,7 +89,7 @@
                     </p>
                     <h2>Recylcing</h2>
                     <p>Beans is committed to recycling plastics, glass, and paper, working with ethical waste management companies. They also use recycled packaging and have introduced fully compostable takeaway products, including cups, lids, straws, and containers, to minimize their environmental footprint and support sustainability.
-                        
+
                     </p>
                     <h2>Charity</h2>
                     <p>We are always happy to support local charities, and have an area near the loos dedicated to publicising local charitable or art events. We also love to provide raffle prizes or sponsorship for good causes.
@@ -105,11 +110,11 @@
                     Unfortunately Karen had been battling with cancer since 2002, but she refused to bow to it and carried on as if it was just a common cold. However, after 16 years Karen finally met a match for her stoicism and bravery, with the inevitable outcome.
                     Karen was an inspiration in the truest sense of the word, and we sorely miss her cheerfulness, ideas, organisation and incredible work ethic.
                 </p>
+            <h2 id="rip">RIP<br> 
+                Karen Lesley Gilbert<br>
+                1958 – 2018</h2>
             </div>
             <div class="right-col glass">
-                <h1>RIP<br> 
-                    Karen Lesley Gilbert<br>
-                    1958 – 2018</h1>
                     <img src="karen.png" id="karen">
             </div>
         </section>
@@ -162,9 +167,16 @@
             
         </section>-->
 
+        <section class="menu" id="menu">
+            <div class="menuimages glass">
+                <h1>Our Menu</h1>
+                <img src="beansmenuimg.png">
+            </div>
+        </section>
+
         <div class="icons">
-            <a href="https://www.beanscoffeestop.co.uk/www.facebook.com/beanscoffeestop" target="_blank" data-aos="fade-in", data-aos-duration="1400" data-aos-delay="600"><i class="ri-facebook-fill"></i></a>
-            <a href="#" data-aos="fade-in", data-aos-duration="1400" data-aos-delay="700"><i class="ri-youtube-fill"></i></a>
+            <a href="https://www.facebook.com/beanscoffeestop" target="_blank" data-aos="fade-in", data-aos-duration="1400" data-aos-delay="600"><i class="ri-facebook-fill"></i></a>
+            <a href="https://www.instagram.com/beanscoffeestop" target="_blank" data-aos="fade-in", data-aos-duration="1400" data-aos-delay="700"><i class="ri-instagram-fill"></i></a>
             <a href="#"data-aos="fade-right", data-aos-duration="1400" data-aos-delay="800"><i class="ri-twitter-fill"></i></a>
         </div>
 
@@ -182,7 +194,7 @@
         </script>
         <script>
             $(document).ready(function(){
-                $(".navlist a, .logo, .karen").on('click', function(event){
+                $(".navlist a, .logo, .karen, .menu").on('click', function(event){
                     if (this.hash !== ""){
                         event.preventDefault();
 
@@ -200,5 +212,13 @@
             })
         </script>
     </content>
+    <footer class="contact" id="contact">
+        <div class="recruit-text glass">
+            <h1>Our recruitment</h1>
+
+        </div>
+
+    </footer>
+    <script src="lightmode.js" ></script>
 </body>
 </html>
