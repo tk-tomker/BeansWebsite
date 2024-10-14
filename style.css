@@ -168,6 +168,7 @@ section{
 .hero-img img{
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 .hero-text h1{
@@ -586,12 +587,14 @@ section{
 
 @media(max-width: 570px){
     .hero{
-        height: 100vh;
+        height: 100%;
+        
     }
     .hero-img{
         height: 400px;
         width: 400px;
         margin: 0 auto;
+        
     }
     :root{
         --big-font: 4rem;
@@ -608,5 +611,9 @@ section{
         height: 300px;
         width: 300px;
         margin: 0 auto;
+    }
+
+    .hero{
+       /* margin-bottom: 150px;*/
     }
 }
